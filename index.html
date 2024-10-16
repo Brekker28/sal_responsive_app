@@ -9,6 +9,65 @@
     <link rel="stylesheet" href="css/global.css">
 </head>
 <body>
+    <nav class="navbar fixed-top">
+        <div class="container-fluid">          
+          <button class="navbar-toggler btn m-0 p-0 fs-1 border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation" style="color: var(--main-color);">
+            <i class="bi bi-list"></i>
+          </button>
+          <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header d-flex justify-content-between">
+              <div class="d-flex justify-content-center align-items-center gap-3">
+                <img src="resources/Icons/EMOCION.png" alt="" class="img-fluid rounded-circle" style="width: 60px;border: 3px solid var(--main-color);padding: 1px;">
+                <h5 class="m-0" style="color: var(--main-color);font-weight: bold;">Damaris Arango</h5>
+              </div>
+              <button type="button" class="btn m-0 p-0 fs-1" data-bs-dismiss="offcanvas" aria-label="Close" style="color: var(--main-color);"><i class="bi bi-list"></i></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item rounded-3 p-1 mb-3" style="background-color: var(--V_pricipal);">
+                  <a class="nav-link active ms-2 fs-5 d-flex justify-content-start align-items-center gap-2" style="color: var(--main-color);font-weight: bold;" href="#"><i class="bi bi-shop-window fs-2 d-flex justify-content-center align-items-center"></i> Tienda</a>
+                </li>                
+                <li class="nav-item rounded-3 p-1 mb-3" style="background-color: var(--V_pricipal);">
+                  <a class="nav-link active ms-2 fs-5 d-flex justify-content-start align-items-center gap-2" style="color: var(--main-color);font-weight: bold;" href="#"><i class="bi bi-pin-map-fill fs-2 d-flex justify-content-center align-items-center"></i> Mapa</a>
+                </li>                
+                <li class="nav-item rounded-3 p-1 mb-3" style="background-color: var(--V_pricipal);">
+                  <a class="nav-link active ms-2 fs-5 d-flex justify-content-start align-items-center gap-2" style="color: var(--main-color);font-weight: bold;" href="#"><i class="bi bi-cake-fill fs-2 d-flex justify-content-center align-items-center"></i> Shows y eventos</a>
+                </li>                
+                <li class="nav-item rounded-3 p-1 mb-3" style="background-color: var(--V_pricipal);">
+                  <a class="nav-link active ms-2 fs-5 d-flex justify-content-start align-items-center gap-2" style="color: var(--main-color);font-weight: bold;" href="#"><i class="bi bi-bag-fill fs-2 d-flex justify-content-center align-items-center"></i> Mis compras</a>
+                </li>                
+                <li class="nav-item rounded-3 p-1 mb-3" style="background-color: var(--V_pricipal);">
+                  <a class="nav-link active ms-2 fs-5 d-flex justify-content-start align-items-center gap-2" style="color: var(--main-color);font-weight: bold;" href="#"><i class="bi bi-egg-fried fs-2 d-flex justify-content-center align-items-center"></i> Alimentos y mas</a>
+                </li>                
+                <li class="nav-item rounded-3 p-1 mb-3" style="background-color: var(--V_pricipal);">
+                  <a class="nav-link active ms-2 fs-5 d-flex justify-content-start align-items-center gap-2" style="color: var(--main-color);font-weight: bold;" href="#"><i class="bi bi-person-vcard-fill fs-2 d-flex justify-content-center align-items-center"></i> Membresia</a>
+                </li>                
+                <li class="nav-item rounded-3 p-1 mb-3" style="background-color: var(--V_pricipal);">
+                  <a class="nav-link active ms-2 fs-5 d-flex justify-content-start align-items-center gap-2" style="color: var(--main-color);font-weight: bold;" href="#"><i class="bi bi-luggage-fill fs-2 d-flex justify-content-center align-items-center"></i> Planea tu visita</a>
+                </li>                
+                <li class="nav-item rounded-3 p-1 mb-3" style="background-color: var(--V_pricipal);">
+                  <a class="nav-link active ms-2 fs-5 d-flex justify-content-start align-items-center gap-2" style="color: var(--main-color);font-weight: bold;" href="#"><i class="bi bi-balloon-heart fs-2 d-flex justify-content-center align-items-center"></i> Festivales</a>
+                </li>                
+                <li class="nav-item rounded-3 p-1 mb-3" style="background-color: var(--V_pricipal);">
+                  <a class="nav-link active ms-2 fs-5 d-flex justify-content-start align-items-center gap-2" style="color: var(--main-color);font-weight: bold;" href="#"><i class="bi bi-p-square-fill fs-2 d-flex justify-content-center align-items-center"></i> Pago parqueadero</a>
+                </li>                
+                <li class="nav-item rounded-3 p-1 mb-3" style="background-color: var(--V_pricipal);">
+                  <a class="nav-link active ms-2 fs-5 d-flex justify-content-start align-items-center gap-2" style="color: var(--main-color);font-weight: bold;" href="https://brekker28.github.io/sal_fotos/"><i class="bi bi-file-earmark-image fs-2 d-flex justify-content-center align-items-center"></i> Mis Fotos</a>
+                </li>                
+              </ul>
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item rounded-3 p-1 mb-3" style="background-color: var(--V_pricipal);">
+                <a class="nav-link active ms-2 fs-5 d-flex justify-content-start align-items-center gap-2" style="color: var(--main-color);font-weight: bold;" href="#"><i class="bi bi-box-arrow-left fs-2 d-flex justify-content-center align-items-center"></i> Cerrar Sesion</a>
+              </li>                
+            </ul>             
+            </div>
+          </div>
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="navbarOffcanvasLg" aria-labelledby="navbarOffcanvasLgLabel">
+            ...
+          </div>
+        </div>
+    </nav>
+
     <div class="d-flex justify-content-center align-items-center position-absolute top-0" style="max-height: max-content ;width: 100vw;height: 100vh;background-color: rgba(122, 122, 122, 0.815);margin: 0;padding: 0;backdrop-filter: blur(10px);display: none !important;">
         <img src="resources/Icons/login-nobg.webp" alt="" srcset="">
     </div>
@@ -20,7 +79,7 @@
             <div class="">
                 <form action="" class="border p-5 rounded-3">
                     <div class="txt_main_color-dark fw-bold fs-5">
-                        <p>
+                        <p class="text-center">
                             Inicia Sesión<br>
                             con tu cuenta<br>
                             Salitre Mágico<br>
@@ -65,12 +124,20 @@
             -moz-box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.75);
             box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.75);">
                 <div class="d-flex justify-content-center align-items-center flex-column active_menu_bottom" style="color: var(--color-gray);">
-                    <i class="bi bi-egg-fried" style="font-size: 35px;"></i>
-                    <h3 style="font-size: 10px !important; margin: 0 !important;">Alimentos y mas</h3>
+                    <i class="bi bi-shop-window" style="font-size: 35px;"></i>
+                    <h3 style="font-size: 10px !important; margin: 0 !important;">Tienda</h3>
                 </div>           
                 <div class="d-flex justify-content-center align-items-center flex-column" style="color: var(--color-gray);">
-                    <i class="bi bi-egg-fried" style="font-size: 35px;"></i>
-                    <h3 style="font-size: 10px !important; margin: 0 !important;">Alimentos y mas</h3>
+                    <i class="bi bi-pin-map-fill" style="font-size: 35px;"></i>
+                    <h3 style="font-size: 10px !important; margin: 0 !important;">Mapa</h3>
+                </div>           
+                <div class="d-flex justify-content-center align-items-center flex-column" style="color: var(--color-gray);">
+                    <i class="bi bi-cake-fill" style="font-size: 35px;"></i>
+                    <h3 style="font-size: 10px !important; margin: 0 !important;">Shows</h3>
+                </div>           
+                <div class="d-flex justify-content-center align-items-center flex-column" style="color: var(--color-gray);">
+                    <i class="bi bi-bag-fill" style="font-size: 35px;"></i>
+                    <h3 style="font-size: 10px !important; margin: 0 !important;">Mis compras</h3>
                 </div>           
                 <div class="d-flex justify-content-center align-items-center flex-column" style="color: var(--color-gray);">
                     <i class="bi bi-egg-fried" style="font-size: 35px;"></i>

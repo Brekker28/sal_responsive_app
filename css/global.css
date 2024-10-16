@@ -1,8 +1,14 @@
 /*color*/
 :root {
     --main-color: #7E4CEA;
-    --main-color-dark: #4f3a99;
+    --main-color-dark: #4f3a99;    
+    --C_clara:#a68ee8;
+    --V_pricipal:#88fc84;
+    --V_clara:#a9ffa9;
+    --V_Clara_plus:#d9ffa9;
+    --G_texo:#868686;    
     --color-gray: #969696;
+    --G_borde:#c5c5c5;
 }
 
 /*background*/
