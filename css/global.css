@@ -1,3 +1,8 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'M PLUS Rounded 1c', sans-serif;  
+  }
 /*color*/
 :root {
     --main-color: #7E4CEA;
@@ -9,6 +14,7 @@
     --G_texo:#868686;    
     --color-gray: #969696;
     --G_borde:#c5c5c5;
+    --G_fondo:#b1b1b1;
 }
 
 /*background*/
@@ -47,4 +53,15 @@
 /*Menu Bottom*/
 .active_menu_bottom{
     color: var(--main-color) !important;
+}
+
+/*Scroll*/
+.container_scroll::-webkit-scrollbar{
+    background: #a68ee88e;
+    width: 7px;
+
+}
+.container_scroll::-webkit-scrollbar-thumb{
+    background: var(--C_clara);
+
 }
