@@ -65,3 +65,70 @@
     background: var(--C_clara);
 
 }
+/*Botones personalizados*/
+.btn_per_one{
+    background: var(--main-color);
+    color: white;
+    font-weight: bold;
+    border-radius: 40px;
+    padding: 8px 20px 8px 20px;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: .8rem;
+}
+.btn_per_two{
+    background: var(--V_pricipal);
+    color: var(--main-color-dark);
+    font-weight: bold;
+    border-radius: 40px;
+    padding: 8px 20px 8px 20px;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: .8rem;
+}
+
+/*BREAKPOINTS*/    
+@media (min-width: 768px) {
+
+        .container-screm-up-10{
+            width: 10% !important;
+        }
+        .container-screm-up-20{
+            width: 20% !important;
+        }
+        .container-screm-up-30{
+            width: 30% !important;
+        }
+        .container-screm-up-40{
+            width: 40% !important;
+        }
+        .container-screm-up-50{
+            width: 50% !important;
+        }
+        .container-screm-up-58{
+            width: 58% !important;
+        }
+        .container-screm-up-60{
+            width: 60% !important;
+        }
+        .container-screm-up-70{
+            width: 70% !important;
+        }
+        .container-screm-up-80{
+            width: 80% !important;
+        }
+        .container-screm-up-90{
+            width: 90% !important;
+        }
+        .container-screm-up-100{
+            width: 100% !important;
+        }
+        .container-direction-row{
+            flex-direction: row !important;
+        }
+    }
+            
