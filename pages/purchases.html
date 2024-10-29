@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mis Compras</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="../css/global.css">
+</head>
+<body>
+    <nav class="navbar fixed-top">
+        <div class="container-fluid">          
+          <button class="navbar-toggler btn m-0 p-0 fs-1 border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation" style="color: var(--main-color);">
+            <i class="bi bi-list"></i>
+          </button>
+          <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header d-flex justify-content-between">
+              <div class="d-flex justify-content-center align-items-center gap-3">
+                <img src="../resources/Icons/EMOCION.png" alt="" class="img-fluid rounded-circle" style="width: 60px;border: 3px solid var(--main-color);padding: 1px;">
+                <h5 class="m-0" style="color: var(--main-color);font-weight: bold;">Damaris Arango</h5>
+              </div>
+              <button type="button" class="btn m-0 p-0 fs-1" data-bs-dismiss="offcanvas" aria-label="Close" style="color: var(--main-color);"><i class="bi bi-list"></i></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item rounded-3 p-1 mb-3" style="background-color: var(--V_pricipal);">
+                  <a class="nav-link active ms-2 fs-5 d-flex justify-content-start align-items-center gap-2" style="color: var(--main-color);font-weight: bold;" href="/sal_responsive_app/pages/shop.html"><i class="bi bi-shop-window fs-2 d-flex justify-content-center align-items-center"></i> Tienda</a>
+                </li>                
+                <li class="nav-item rounded-3 p-1 mb-3" style="background-color: var(--V_pricipal);">
+                  <a class="nav-link active ms-2 fs-5 d-flex justify-content-start align-items-center gap-2" style="color: var(--main-color);font-weight: bold;" href="/sal_responsive_app/pages/map.html"><i class="bi bi-pin-map-fill fs-2 d-flex justify-content-center align-items-center"></i> Mapa</a>
+                </li>                
+                <li class="nav-item rounded-3 p-1 mb-3" style="background-color: var(--V_pricipal);">
+                  <a class="nav-link active ms-2 fs-5 d-flex justify-content-start align-items-center gap-2" style="color: var(--main-color);font-weight: bold;" href="/sal_responsive_app/pages/shows.html"><i class="bi bi-cake-fill fs-2 d-flex justify-content-center align-items-center"></i> Shows y eventos</a>
+                </li>                
+                <li class="nav-item rounded-3 p-1 mb-3" style="background-color: var(--V_pricipal);">
+                  <a class="nav-link active ms-2 fs-5 d-flex justify-content-start align-items-center gap-2" style="color: var(--main-color);font-weight: bold;" href="/sal_responsive_app/pages/purchases.html"><i class="bi bi-bag-fill fs-2 d-flex justify-content-center align-items-center"></i> Mis compras</a>
+                </li>                
+                <li class="nav-item rounded-3 p-1 mb-3" style="background-color: var(--V_pricipal);">
+                  <a class="nav-link active ms-2 fs-5 d-flex justify-content-start align-items-center gap-2" style="color: var(--main-color);font-weight: bold;" href="/sal_responsive_app/pages/food_more.html"><i class="bi bi-egg-fried fs-2 d-flex justify-content-center align-items-center"></i> Alimentos y mas</a>
+                </li>                
+                <li class="nav-item rounded-3 p-1 mb-3" style="background-color: var(--V_pricipal);">
+                  <a class="nav-link active ms-2 fs-5 d-flex justify-content-start align-items-center gap-2" style="color: var(--main-color);font-weight: bold;" href="/sal_responsive_app/pages/membership.html"><i class="bi bi-person-vcard-fill fs-2 d-flex justify-content-center align-items-center"></i> Membresia</a>
+                </li>                
+                <li class="nav-item rounded-3 p-1 mb-3" style="background-color: var(--V_pricipal);">
+                  <a class="nav-link active ms-2 fs-5 d-flex justify-content-start align-items-center gap-2" style="color: var(--main-color);font-weight: bold;" href="/sal_responsive_app/pages/plan_visit.html"><i class="bi bi-luggage-fill fs-2 d-flex justify-content-center align-items-center"></i> Planea tu visita</a>
+                </li>                
+                <li class="nav-item rounded-3 p-1 mb-3" style="background-color: var(--V_pricipal);">
+                  <a class="nav-link active ms-2 fs-5 d-flex justify-content-start align-items-center gap-2" style="color: var(--main-color);font-weight: bold;" href="/sal_responsive_app/pages/festivals.html"><i class="bi bi-balloon-heart fs-2 d-flex justify-content-center align-items-center"></i> Festivales</a>
+                </li>                
+                <li class="nav-item rounded-3 p-1 mb-3" style="background-color: var(--V_pricipal);">
+                  <a class="nav-link active ms-2 fs-5 d-flex justify-content-start align-items-center gap-2" style="color: var(--main-color);font-weight: bold;" href="/sal_responsive_app/pages/payment_parking.html"><i class="bi bi-p-square-fill fs-2 d-flex justify-content-center align-items-center"></i> Pago parqueadero</a>
+                </li>                
+                <li class="nav-item rounded-3 p-1 mb-3" style="background-color: var(--V_pricipal);">
+                  <a class="nav-link active ms-2 fs-5 d-flex justify-content-start align-items-center gap-2" style="color: var(--main-color);font-weight: bold;" href="/sal_responsive_app/pages/my_gallery.html"><i class="bi bi-file-earmark-image fs-2 d-flex justify-content-center align-items-center"></i> Mis Fotos</a>
+                </li>                
+              </ul>
+                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                    <li class="nav-item rounded-3 p-1 mb-3" style="background-color: var(--V_pricipal);">
+                      <a class="nav-link active ms-2 fs-5 d-flex justify-content-start align-items-center gap-2" style="color: var(--main-color);font-weight: bold;" href="/sal_responsive_app"><i class="bi bi-box-arrow-left fs-2 d-flex justify-content-center align-items-center"></i> Cerrar Sesion</a>
+                    </li>                
+                </ul>             
+            </div>
+          </div>         
+        </div>
+    </nav>
+
+    <div class="container-fluid">
+      <nav class="mt-3 d-flex justify-content-center w-100" style="height: 130px;">
+          <div class="img_background_format w-75 h-100 rounded-4" style="background-image: url(../resources/banners/bannerv2.webp);"></div>
+      </nav>
+      <div class=" d-flex justify-content-center flex-column align-items-center w-100">
+        <div class="m-4 d-flex justify-content-start w-100" style="font-weight: bold;color: var(--main-color);max-width: 1064px">
+          Mis Compras
+        </div>
+        <div class="d-flex flex-wrap justify-content-center align-items-center w-100 gap-2" style="max-width: 1264px">
+          <div class="d-flex align-items-center rounded-3 p-2 gap-2" style="background-color: var(--main-color);">
+            <div style="width: 70px;height: 70px;">
+              <img class="img-fluid rounded-circle" src="../resources/Icons/EMOCION.png" alt="" style="border: 3px solid white;">
+            </div>
+            <div>
+              <div class="text-white" style="font-weight: 600;">
+                Pedido #92572
+              </div>
+              <div class="d-flex justify-content-between gap-3 text-white" style="font-size: 14px;">
+                <div class="d-flex flex-column justify-content-center align-items-center">
+                  <span>Fecha Visita</span>
+                  <span>2024-07-19</span>
+                </div>                
+                <div class="d-flex flex-column justify-content-center align-items-center">
+                  <span>Fecha Visita</span>
+                  <span>2024-07-19</span>
+                </div>                
+              </div>
+            </div>
+          </div>
+          <div class="d-flex align-items-center rounded-3 p-2 gap-2" style="background-color: var(--main-color);">
+            <div style="width: 70px;height: 70px;">
+              <img class="img-fluid rounded-circle" src="../resources/Icons/EMOCION.png" alt="" style="border: 3px solid white;">
+            </div>
+            <div>
+              <div class="text-white" style="font-weight: 600;">
+                Pedido #92572
+              </div>
+              <div class="d-flex justify-content-between gap-3 text-white" style="font-size: 14px;">
+                <div class="d-flex flex-column justify-content-center align-items-center">
+                  <span>Fecha Visita</span>
+                  <span>2024-07-19</span>
+                </div>                
+                <div class="d-flex flex-column justify-content-center align-items-center">
+                  <span>Fecha Visita</span>
+                  <span>2024-07-19</span>
+                </div>                
+              </div>
+            </div>
+          </div>
+          <div class="d-flex align-items-center rounded-3 p-2 gap-2" style="background-color: var(--main-color);">
+            <div style="width: 70px;height: 70px;">
+              <img class="img-fluid rounded-circle" src="../resources/Icons/EMOCION.png" alt="" style="border: 3px solid white;">
+            </div>
+            <div>
+              <div class="text-white" style="font-weight: 600;">
+                Pedido #92572
+              </div>
+              <div class="d-flex justify-content-between gap-3 text-white" style="font-size: 14px;">
+                <div class="d-flex flex-column justify-content-center align-items-center">
+                  <span>Fecha Visita</span>
+                  <span>2024-07-19</span>
+                </div>                
+                <div class="d-flex flex-column justify-content-center align-items-center">
+                  <span>Fecha Visita</span>
+                  <span>2024-07-19</span>
+                </div>                
+              </div>
+            </div>
+          </div>
+          <div class="d-flex align-items-center rounded-3 p-2 gap-2" style="background-color: var(--main-color);">
+            <div style="width: 70px;height: 70px;">
+              <img class="img-fluid rounded-circle" src="../resources/Icons/EMOCION.png" alt="" style="border: 3px solid white;">
+            </div>
+            <div>
+              <div class="text-white" style="font-weight: 600;">
+                Pedido #92572
+              </div>
+              <div class="d-flex justify-content-between gap-3 text-white" style="font-size: 14px;">
+                <div class="d-flex flex-column justify-content-center align-items-center">
+                  <span>Fecha Visita</span>
+                  <span>2024-07-19</span>
+                </div>                
+                <div class="d-flex flex-column justify-content-center align-items-center">
+                  <span>Fecha Visita</span>
+                  <span>2024-07-19</span>
+                </div>                
+              </div>
+            </div>
+          </div>
+          <div class="d-flex align-items-center rounded-3 p-2 gap-2" style="background-color: var(--main-color);">
+            <div style="width: 70px;height: 70px;">
+              <img class="img-fluid rounded-circle" src="../resources/Icons/EMOCION.png" alt="" style="border: 3px solid white;">
+            </div>
+            <div>
+              <div class="text-white" style="font-weight: 600;">
+                Pedido #92572
+              </div>
+              <div class="d-flex justify-content-between gap-3 text-white" style="font-size: 14px;">
+                <div class="d-flex flex-column justify-content-center align-items-center">
+                  <span>Fecha Visita</span>
+                  <span>2024-07-19</span>
+                </div>                
+                <div class="d-flex flex-column justify-content-center align-items-center">
+                  <span>Fecha Visita</span>
+                  <span>2024-07-19</span>
+                </div>                
+              </div>
+            </div>
+          </div>
+          <div class="d-flex align-items-center rounded-3 p-2 gap-2" style="background-color: var(--main-color);">
+            <div style="width: 70px;height: 70px;">
+              <img class="img-fluid rounded-circle" src="../resources/Icons/EMOCION.png" alt="" style="border: 3px solid white;">
+            </div>
+            <div>
+              <div class="text-white" style="font-weight: 600;">
+                Pedido #92572
+              </div>
+              <div class="d-flex justify-content-between gap-3 text-white" style="font-size: 14px;">
+                <div class="d-flex flex-column justify-content-center align-items-center">
+                  <span>Fecha Visita</span>
+                  <span>2024-07-19</span>
+                </div>                
+                <div class="d-flex flex-column justify-content-center align-items-center">
+                  <span>Fecha Visita</span>
+                  <span>2024-07-19</span>
+                </div>                
+              </div>
+            </div>
+          </div>
+          <div class="d-flex align-items-center rounded-3 p-2 gap-2" style="background-color: var(--main-color);">
+            <div style="width: 70px;height: 70px;">
+              <img class="img-fluid rounded-circle" src="../resources/Icons/EMOCION.png" alt="" style="border: 3px solid white;">
+            </div>
+            <div>
+              <div class="text-white" style="font-weight: 600;">
+                Pedido #92572
+              </div>
+              <div class="d-flex justify-content-between gap-3 text-white" style="font-size: 14px;">
+                <div class="d-flex flex-column justify-content-center align-items-center">
+                  <span>Fecha Visita</span>
+                  <span>2024-07-19</span>
+                </div>                
+                <div class="d-flex flex-column justify-content-center align-items-center">
+                  <span>Fecha Visita</span>
+                  <span>2024-07-19</span>
+                </div>                
+              </div>
+            </div>
+          </div>
+          <div class="d-flex align-items-center rounded-3 p-2 gap-2" style="background-color: var(--main-color);">
+            <div style="width: 70px;height: 70px;">
+              <img class="img-fluid rounded-circle" src="../resources/Icons/EMOCION.png" alt="" style="border: 3px solid white;">
+            </div>
+            <div>
+              <div class="text-white" style="font-weight: 600;">
+                Pedido #92572
+              </div>
+              <div class="d-flex justify-content-between gap-3 text-white" style="font-size: 14px;">
+                <div class="d-flex flex-column justify-content-center align-items-center">
+                  <span>Fecha Visita</span>
+                  <span>2024-07-19</span>
+                </div>                
+                <div class="d-flex flex-column justify-content-center align-items-center">
+                  <span>Fecha Visita</span>
+                  <span>2024-07-19</span>
+                </div>                
+              </div>
+            </div>
+          </div>
+          <div class="d-flex align-items-center rounded-3 p-2 gap-2" style="background-color: var(--main-color);">
+            <div style="width: 70px;height: 70px;">
+              <img class="img-fluid rounded-circle" src="../resources/Icons/EMOCION.png" alt="" style="border: 3px solid white;">
+            </div>
+            <div>
+              <div class="text-white" style="font-weight: 600;">
+                Pedido #92572
+              </div>
+              <div class="d-flex justify-content-between gap-3 text-white" style="font-size: 14px;">
+                <div class="d-flex flex-column justify-content-center align-items-center">
+                  <span>Fecha Visita</span>
+                  <span>2024-07-19</span>
+                </div>                
+                <div class="d-flex flex-column justify-content-center align-items-center">
+                  <span>Fecha Visita</span>
+                  <span>2024-07-19</span>
+                </div>                
+              </div>
+            </div>
+          </div>
+          <div class="d-flex align-items-center rounded-3 p-2 gap-2" style="background-color: var(--main-color);">
+            <div style="width: 70px;height: 70px;">
+              <img class="img-fluid rounded-circle" src="../resources/Icons/EMOCION.png" alt="" style="border: 3px solid white;">
+            </div>
+            <div>
+              <div class="text-white" style="font-weight: 600;">
+                Pedido #92572
+              </div>
+              <div class="d-flex justify-content-between gap-3 text-white" style="font-size: 14px;">
+                <div class="d-flex flex-column justify-content-center align-items-center">
+                  <span>Fecha Visita</span>
+                  <span>2024-07-19</span>
+                </div>                
+                <div class="d-flex flex-column justify-content-center align-items-center">
+                  <span>Fecha Visita</span>
+                  <span>2024-07-19</span>
+                </div>                
+              </div>
+            </div>
+          </div>
+          <div class="d-flex align-items-center rounded-3 p-2 gap-2" style="background-color: var(--main-color);">
+            <div style="width: 70px;height: 70px;">
+              <img class="img-fluid rounded-circle" src="../resources/Icons/EMOCION.png" alt="" style="border: 3px solid white;">
+            </div>
+            <div>
+              <div class="text-white" style="font-weight: 600;">
+                Pedido #92572
+              </div>
+              <div class="d-flex justify-content-between gap-3 text-white" style="font-size: 14px;">
+                <div class="d-flex flex-column justify-content-center align-items-center">
+                  <span>Fecha Visita</span>
+                  <span>2024-07-19</span>
+                </div>                
+                <div class="d-flex flex-column justify-content-center align-items-center">
+                  <span>Fecha Visita</span>
+                  <span>2024-07-19</span>
+                </div>                
+              </div>
+            </div>
+          </div>
+          <div class="d-flex align-items-center rounded-3 p-2 gap-2" style="background-color: var(--main-color);">
+            <div style="width: 70px;height: 70px;">
+              <img class="img-fluid rounded-circle" src="../resources/Icons/EMOCION.png" alt="" style="border: 3px solid white;">
+            </div>
+            <div>
+              <div class="text-white" style="font-weight: 600;">
+                Pedido #92572
+              </div>
+              <div class="d-flex justify-content-between gap-3 text-white" style="font-size: 14px;">
+                <div class="d-flex flex-column justify-content-center align-items-center">
+                  <span>Fecha Visita</span>
+                  <span>2024-07-19</span>
+                </div>                
+                <div class="d-flex flex-column justify-content-center align-items-center">
+                  <span>Fecha Visita</span>
+                  <span>2024-07-19</span>
+                </div>                
+              </div>
+            </div>
+          </div>
+          <div class="d-flex align-items-center rounded-3 p-2 gap-2" style="background-color: var(--main-color);">
+            <div style="width: 70px;height: 70px;">
+              <img class="img-fluid rounded-circle" src="../resources/Icons/EMOCION.png" alt="" style="border: 3px solid white;">
+            </div>
+            <div>
+              <div class="text-white" style="font-weight: 600;">
+                Pedido #92572
+              </div>
+              <div class="d-flex justify-content-between gap-3 text-white" style="font-size: 14px;">
+                <div class="d-flex flex-column justify-content-center align-items-center">
+                  <span>Fecha Visita</span>
+                  <span>2024-07-19</span>
+                </div>                
+                <div class="d-flex flex-column justify-content-center align-items-center">
+                  <span>Fecha Visita</span>
+                  <span>2024-07-19</span>
+                </div>                
+              </div>
+            </div>
+          </div>
+          <div class="d-flex align-items-center rounded-3 p-2 gap-2" style="background-color: var(--main-color);">
+            <div style="width: 70px;height: 70px;">
+              <img class="img-fluid rounded-circle" src="../resources/Icons/EMOCION.png" alt="" style="border: 3px solid white;">
+            </div>
+            <div>
+              <div class="text-white" style="font-weight: 600;">
+                Pedido #92572
+              </div>
+              <div class="d-flex justify-content-between gap-3 text-white" style="font-size: 14px;">
+                <div class="d-flex flex-column justify-content-center align-items-center">
+                  <span>Fecha Visita</span>
+                  <span>2024-07-19</span>
+                </div>                
+                <div class="d-flex flex-column justify-content-center align-items-center">
+                  <span>Fecha Visita</span>
+                  <span>2024-07-19</span>
+                </div>                
+              </div>
+            </div>
+          </div>
+          <div class="d-flex align-items-center rounded-3 p-2 gap-2" style="background-color: var(--main-color);">
+            <div style="width: 70px;height: 70px;">
+              <img class="img-fluid rounded-circle" src="../resources/Icons/EMOCION.png" alt="" style="border: 3px solid white;">
+            </div>
+            <div>
+              <div class="text-white" style="font-weight: 600;">
+                Pedido #92572
+              </div>
+              <div class="d-flex justify-content-between gap-3 text-white" style="font-size: 14px;">
+                <div class="d-flex flex-column justify-content-center align-items-center">
+                  <span>Fecha Visita</span>
+                  <span>2024-07-19</span>
+                </div>                
+                <div class="d-flex flex-column justify-content-center align-items-center">
+                  <span>Fecha Visita</span>
+                  <span>2024-07-19</span>
+                </div>                
+              </div>
+            </div>
+          </div>
+          <div class="d-flex align-items-center rounded-3 p-2 gap-2" style="background-color: var(--main-color);">
+            <div style="width: 70px;height: 70px;">
+              <img class="img-fluid rounded-circle" src="../resources/Icons/EMOCION.png" alt="" style="border: 3px solid white;">
+            </div>
+            <div>
+              <div class="text-white" style="font-weight: 600;">
+                Pedido #92572
+              </div>
+              <div class="d-flex justify-content-between gap-3 text-white" style="font-size: 14px;">
+                <div class="d-flex flex-column justify-content-center align-items-center">
+                  <span>Fecha Visita</span>
+                  <span>2024-07-19</span>
+                </div>                
+                <div class="d-flex flex-column justify-content-center align-items-center">
+                  <span>Fecha Visita</span>
+                  <span>2024-07-19</span>
+                </div>                
+              </div>
+            </div>
+          </div>
+          <div class="d-flex align-items-center rounded-3 p-2 gap-2" style="background-color: var(--main-color);">
+            <div style="width: 70px;height: 70px;">
+              <img class="img-fluid rounded-circle" src="../resources/Icons/EMOCION.png" alt="" style="border: 3px solid white;">
+            </div>
+            <div>
+              <div class="text-white" style="font-weight: 600;">
+                Pedido #92572
+              </div>
+              <div class="d-flex justify-content-between gap-3 text-white" style="font-size: 14px;">
+                <div class="d-flex flex-column justify-content-center align-items-center">
+                  <span>Fecha Visita</span>
+                  <span>2024-07-19</span>
+                </div>                
+                <div class="d-flex flex-column justify-content-center align-items-center">
+                  <span>Fecha Visita</span>
+                  <span>2024-07-19</span>
+                </div>                
+              </div>
+            </div>
+          </div>
+          <div class="d-flex align-items-center rounded-3 p-2 gap-2" style="background-color: var(--main-color);">
+            <div style="width: 70px;height: 70px;">
+              <img class="img-fluid rounded-circle" src="../resources/Icons/EMOCION.png" alt="" style="border: 3px solid white;">
+            </div>
+            <div>
+              <div class="text-white" style="font-weight: 600;">
+                Pedido #92572
+              </div>
+              <div class="d-flex justify-content-between gap-3 text-white" style="font-size: 14px;">
+                <div class="d-flex flex-column justify-content-center align-items-center">
+                  <span>Fecha Visita</span>
+                  <span>2024-07-19</span>
+                </div>                
+                <div class="d-flex flex-column justify-content-center align-items-center">
+                  <span>Fecha Visita</span>
+                  <span>2024-07-19</span>
+                </div>                
+              </div>
+            </div>
+          </div>
+          <div class="d-flex align-items-center rounded-3 p-2 gap-2" style="background-color: var(--main-color);">
+            <div style="width: 70px;height: 70px;">
+              <img class="img-fluid rounded-circle" src="../resources/Icons/EMOCION.png" alt="" style="border: 3px solid white;">
+            </div>
+            <div>
+              <div class="text-white" style="font-weight: 600;">
+                Pedido #92572
+              </div>
+              <div class="d-flex justify-content-between gap-3 text-white" style="font-size: 14px;">
+                <div class="d-flex flex-column justify-content-center align-items-center">
+                  <span>Fecha Visita</span>
+                  <span>2024-07-19</span>
+                </div>                
+                <div class="d-flex flex-column justify-content-center align-items-center">
+                  <span>Fecha Visita</span>
+                  <span>2024-07-19</span>
+                </div>                
+              </div>
+            </div>
+          </div>
+          <div class="d-flex align-items-center rounded-3 p-2 gap-2" style="background-color: var(--main-color);">
+            <div style="width: 70px;height: 70px;">
+              <img class="img-fluid rounded-circle" src="../resources/Icons/EMOCION.png" alt="" style="border: 3px solid white;">
+            </div>
+            <div>
+              <div class="text-white" style="font-weight: 600;">
+                Pedido #92572
+              </div>
+              <div class="d-flex justify-content-between gap-3 text-white" style="font-size: 14px;">
+                <div class="d-flex flex-column justify-content-center align-items-center">
+                  <span>Fecha Visita</span>
+                  <span>2024-07-19</span>
+                </div>                
+                <div class="d-flex flex-column justify-content-center align-items-center">
+                  <span>Fecha Visita</span>
+                  <span>2024-07-19</span>
+                </div>                
+              </div>
+            </div>
+          </div>
+          <div class="d-flex align-items-center rounded-3 p-2 gap-2" style="background-color: var(--main-color);">
+            <div style="width: 70px;height: 70px;">
+              <img class="img-fluid rounded-circle" src="../resources/Icons/EMOCION.png" alt="" style="border: 3px solid white;">
+            </div>
+            <div>
+              <div class="text-white" style="font-weight: 600;">
+                Pedido #92572
+              </div>
+              <div class="d-flex justify-content-between gap-3 text-white" style="font-size: 14px;">
+                <div class="d-flex flex-column justify-content-center align-items-center">
+                  <span>Fecha Visita</span>
+                  <span>2024-07-19</span>
+                </div>                
+                <div class="d-flex flex-column justify-content-center align-items-center">
+                  <span>Fecha Visita</span>
+                  <span>2024-07-19</span>
+                </div>                
+              </div>
+            </div>
+          </div>
+          <div class="d-flex align-items-center rounded-3 p-2 gap-2" style="background-color: var(--main-color);">
+            <div style="width: 70px;height: 70px;">
+              <img class="img-fluid rounded-circle" src="../resources/Icons/EMOCION.png" alt="" style="border: 3px solid white;">
+            </div>
+            <div>
+              <div class="text-white" style="font-weight: 600;">
+                Pedido #92572
+              </div>
+              <div class="d-flex justify-content-between gap-3 text-white" style="font-size: 14px;">
+                <div class="d-flex flex-column justify-content-center align-items-center">
+                  <span>Fecha Visita</span>
+                  <span>2024-07-19</span>
+                </div>                
+                <div class="d-flex flex-column justify-content-center align-items-center">
+                  <span>Fecha Visita</span>
+                  <span>2024-07-19</span>
+                </div>                
+              </div>
+            </div>
+          </div>
+          <div class="d-flex align-items-center rounded-3 p-2 gap-2" style="background-color: var(--main-color);">
+            <div style="width: 70px;height: 70px;">
+              <img class="img-fluid rounded-circle" src="../resources/Icons/EMOCION.png" alt="" style="border: 3px solid white;">
+            </div>
+            <div>
+              <div class="text-white" style="font-weight: 600;">
+                Pedido #92572
+              </div>
+              <div class="d-flex justify-content-between gap-3 text-white" style="font-size: 14px;">
+                <div class="d-flex flex-column justify-content-center align-items-center">
+                  <span>Fecha Visita</span>
+                  <span>2024-07-19</span>
+                </div>                
+                <div class="d-flex flex-column justify-content-center align-items-center">
+                  <span>Fecha Visita</span>
+                  <span>2024-07-19</span>
+                </div>                
+              </div>
+            </div>
+          </div>
+          <div class="d-flex align-items-center rounded-3 p-2 gap-2" style="background-color: var(--main-color);">
+            <div style="width: 70px;height: 70px;">
+              <img class="img-fluid rounded-circle" src="../resources/Icons/EMOCION.png" alt="" style="border: 3px solid white;">
+            </div>
+            <div>
+              <div class="text-white" style="font-weight: 600;">
+                Pedido #92572
+              </div>
+              <div class="d-flex justify-content-between gap-3 text-white" style="font-size: 14px;">
+                <div class="d-flex flex-column justify-content-center align-items-center">
+                  <span>Fecha Visita</span>
+                  <span>2024-07-19</span>
+                </div>                
+                <div class="d-flex flex-column justify-content-center align-items-center">
+                  <span>Fecha Visita</span>
+                  <span>2024-07-19</span>
+                </div>                
+              </div>
+            </div>
+          </div>
+          <div class="d-flex align-items-center rounded-3 p-2 gap-2" style="background-color: var(--main-color);">
+            <div style="width: 70px;height: 70px;">
+              <img class="img-fluid rounded-circle" src="../resources/Icons/EMOCION.png" alt="" style="border: 3px solid white;">
+            </div>
+            <div>
+              <div class="text-white" style="font-weight: 600;">
+                Pedido #92572
+              </div>
+              <div class="d-flex justify-content-between gap-3 text-white" style="font-size: 14px;">
+                <div class="d-flex flex-column justify-content-center align-items-center">
+                  <span>Fecha Visita</span>
+                  <span>2024-07-19</span>
+                </div>                
+                <div class="d-flex flex-column justify-content-center align-items-center">
+                  <span>Fecha Visita</span>
+                  <span>2024-07-19</span>
+                </div>                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>      
+    </div> 
+
+    <div class="position-relative" style="height: 89px;">
+        <div class="bottom_menu position-fixed w-100 bottom-0 d-flex justify-content-center align-items-center p-1 h-auto">
+            <div class="d-flex justify-content-center align-items-center" style="width: 98%;">
+                <div class="w-100 h-100 d-flex align-items-center justify-content-between gap-3 overflow-hidden p-2 rounded-4" style="background: white;-webkit-box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.75);
+                -moz-box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.75);
+                box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.75);">
+                    <div class="d-flex justify-content-center align-items-center flex-column" style="color: var(--color-gray);cursor: pointer;" onclick="window.location.href ='/sal_responsive_app/pages/shop.html'">
+                        <i class="bi bi-shop-window" style="font-size: 35px;"></i>
+                        <h3 style="font-size: 10px !important; margin: 0 !important;">Tienda</h3>
+                    </div>           
+                    <div class="d-flex justify-content-center align-items-center flex-column" style="color: var(--color-gray);cursor: pointer; "onclick="window.location.href ='/sal_responsive_app/pages/map.html'">
+                        <i class="bi bi-pin-map-fill" style="font-size: 35px;"></i>
+                        <h3 style="font-size: 10px !important; margin: 0 !important;">Mapa</h3>
+                    </div>           
+                    <div class="d-flex justify-content-center align-items-center flex-column " style="color: var(--color-gray);cursor: pointer;" onclick="window.location.href ='/sal_responsive_app/pages/shows.html'">
+                        <i class="bi bi-cake-fill" style="font-size: 35px;"></i>
+                        <h3 style="font-size: 10px !important; margin: 0 !important;">Shows</h3>
+                    </div>           
+                    <div class="d-flex justify-content-center align-items-center flex-column active_menu_bottom" style="color: var(--color-gray);cursor: pointer;"onclick="window.location.href ='/sal_responsive_app/pages/purchases.html'">
+                        <i class="bi bi-bag-fill" style="font-size: 35px;"></i>
+                        <h3 style="font-size: 10px !important; margin: 0 !important;">Mis compras</h3>
+                    </div>           
+                    <div class="d-flex justify-content-center align-items-center flex-column" style="color: var(--color-gray);cursor: pointer;" onclick="window.location.href ='/sal_responsive_app/pages/food_more.html'">
+                        <i class="bi bi-egg-fried" style="font-size: 35px;"></i>
+                        <h3 style="font-size: 10px !important; margin: 0 !important;">Alimentos y mas</h3>
+                    </div>           
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
