@@ -130,8 +130,26 @@
         .container-direction-row{
             flex-direction: row !important;
         }
+        
+        .grid-gallery{
+            grid-template-columns: 1fr 1fr 1fr 1fr !important; 
+        }
+        .purchases-data-phone{
+            display: none !important;
+        }
+        .purchases-data-desktop{
+            display: flex !important;            
+        }
     }
-            
+    @media (max-width: 768px) {
+        .purchases-data-phone{
+            display: flex !important;
+        }
+        .purchases-data-desktop{
+            display: none !important;            
+        }
+    }
+        
 .shows_img_gallery:first-child{
     width: 100%;
     max-width: 1064px !important;
@@ -146,3 +164,35 @@
     background-position: center;
     border-radius: 60px;
 }
+
+
+.grid-gallery{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5px;
+    margin: 10px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    max-height: 480px;
+}
+
+
+.custom-tooltip {
+    --bs-tooltip-bg: var(--main-color-dark);
+    --bs-tooltip-color: var(--bs-white);
+  }
+
+
+  .btn-salitre {
+    --bs-btn-font-weight: 600;
+    --bs-btn-color: white;
+    --bs-btn-bg: var(--main-color);
+    --bs-btn-border-color: var(--main-color);
+    --bs-btn-hover-color: white;
+    --bs-btn-hover-bg: var(--main-color);
+    --bs-btn-hover-border-color:  var(--main-color);
+    --bs-btn-focus-shadow-rgb:var(--main-color);
+    --bs-btn-active-color: white;
+    --bs-btn-active-bg:  var(--main-color);
+    --bs-btn-active-border-color:  var(--main-color);
+  }
