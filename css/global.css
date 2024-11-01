@@ -196,3 +196,16 @@
     --bs-btn-active-bg:  var(--main-color);
     --bs-btn-active-border-color:  var(--main-color);
   }
+  .btn-salitre2 {
+    --bs-btn-font-weight: 600;
+    --bs-btn-color:  var(--main-color-dark);
+    --bs-btn-bg: var(--V_pricipal);
+    --bs-btn-border-color: var(--V_pricipal);
+    --bs-btn-hover-color:  var(--main-color-dark);
+    --bs-btn-hover-bg: var(--V_pricipal);
+    --bs-btn-hover-border-color:  var(--V_pricipal);
+    --bs-btn-focus-shadow-rgb:var(--V_pricipalr);
+    --bs-btn-active-color:  var(--main-color-dark);
+    --bs-btn-active-bg:  var(--V_pricipal);
+    --bs-btn-active-border-color:  var(--V_pricipal);
+  }
