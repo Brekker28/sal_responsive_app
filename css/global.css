@@ -149,7 +149,14 @@
             display: none !important;            
         }
     }
-        
+    @media (max-width: 543px) {
+        .card-membership{
+            justify-content: center !important;
+        }           
+    }
+    .card-membership{
+        justify-content: flex-start;
+    }  
 .shows_img_gallery:first-child{
     width: 100%;
     max-width: 1064px !important;
