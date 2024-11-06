@@ -83,7 +83,7 @@
 
       <div class="container-fluid d-flex justify-content-center mt-5 flex-column flex-wrap">
         <div class="d-flex align-items-start  m-auto justify-content-between gap-4 container-screm-up-70 flex-column container-direction-row" style="max-width: 1064px;width: 90%;">
-            <div class="d-flex flex-wrap justify-content-between flex-row container-screm-up-58">
+            <div class="flex-wrap justify-content-between flex-row container-screm-up-58" id="pay-four">
                 <div class="d-flex flex-row align-items-end gap-1 w-100 container-screm-up-70" style="border: 0 solid #e5e7eb;">
                     <div class="rounded-top-4 d-flex justify-content-center align-items-center text-center" style="background: var(--main-color);padding: 10px;color: white;font-weight: bold;width: 40%;font-size: 9px;">
                         Pasaportes
@@ -118,9 +118,72 @@
                         </div>
                     </div> 
                 </div>                         
-            </div>  
+            </div> 
+            <div class="flex-wrap justify-content-between flex-row container-screm-up-58"  id="pay-three">
+                <div class="w-100 flex-column justify-content-center align-items-center p-3">                     
+                    <form action="" class="border rounded-5" style="height: max-content;max-width: 550px" >                
+                        <div class="d-flex flex-column justify-content-center align-items-center">                
+                            <h1 class="fs-4 pt-2 mt-3 txt_main_color-dark" style="width: 90%;font-weight: bold;">Confirmar tus datos</h1>
+                            <div style="width: 90%;">
+                                <div class="mb-3 d-flex  justify-content-center align-items-center gap-2">                                                    
+                                    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" disabled>                        
+                                    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" disabled>                        
+                                </div>
+                                <div class="mb-3 d-flex  justify-content-center align-items-center gap-2">                                                    
+                                    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" disabled>                        
+                                    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="C.C">                        
+                                </div>
+                                <div class="mb-3 d-flex  justify-content-center align-items-center gap-2">                                                    
+                                    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" disabled>                        
+                                    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" disabled>                        
+                                </div>
+                                <div class="mb-3 d-flex  justify-content-center align-items-center gap-2">                                                    
+                                    <input type="date" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">                        
+                                    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" disabled>                        
+                                </div>
+                                <div class="mb-3 d-flex  justify-content-center align-items-center gap-2">                                                    
+                                    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="BOGOTA">                        
+                                    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" disabled>                        
+                                </div>
+                            </div>
+                            <div style="width: 90%;">
+                                <div class="d-flex justify-content-center align-items-center gap-2 mb-1">
+                                    <input type="checkbox" class="form-check-input p-0 m-0" name="" id="" style="width: 30px;height: 30px;"> 
+                                    <p class="p-0 m-0">He leído y acepto los términos y condiciones y las Políticas de Privacidad y tratamiento de datos personales</p>
+                                </div>
+                                <p>Te invitamos a revisar <strong class="txt_main_color-dark" style="cursor: pointer;">tips, políticas, términos y condiciones</strong> de visita y de la compra web.</p>
+                            </div>
+                            <div style="width: 90%;">
+                                <h1 class="fs-5 pt-2 txt_main_color-dark" style="width: 80%;font-weight: bold;">Elije tu metodo de pago:</h1>
+                                <div>
+                                    <div class="row d-flex justify-content-center align-items-center border rounded-4 p-2" style="height: 70px;">
+                                        <input type="radio" class="form-check-input p-0 m-0 col-1" name="r_pay" id="" style="width: 30px;height: 30px;"> 
+                                        <ul class="col d-flex justify-content-center align-items-center p-0 m-0 gap-3" style="list-style: none;">
+                                            <li><img src="../resources/Icons/visa.png" alt="" srcset="" class="img-fluid" style="width: 50px;"></li>
+                                            <li><img src="../resources/Icons/mastercard.png" alt="" srcset="" class="img-fluid" style="width: 50px;"></li>
+                                            <li><img src="../resources/Icons/pse.png" alt="" srcset="" class="img-fluid" style="width: 50px;"></li>
+                                            <li><img src="../resources/Icons/nequi.png" alt="" srcset="" class="img-fluid" style="width: 50px;"></li>
+                                            <li><img src="../resources/Icons/daviplata.png" alt="" srcset="" class="img-fluid" style="width: 50px;"></li>
+                                            <li><img src="../resources/Icons/efecty.png" alt="" srcset="" class="img-fluid" style="width: 50px;"></li>
+                                        </ul>
+                                    </div>
+                                    <div class="row d-flex justify-content-center align-items-center border rounded-4 p-2 mt-3 mb-3"  style="height: 70px;">
+                                        <input type="radio" class="form-check-input p-0 m-0 col-1" name="r_pay" id="" style="width: 30px;height: 30px;">                  
+                                        <div class="col d-flex justify-content-center align-items-center p-0 m-0">
+                                            <div class="addi_banner_log me-1" style="width: 20px; height: 20px; display: block;"></div>
+                                            <div>Paga con <img class="addi_banner_info_img" src="https://statics.addi.com/logo/v2/main/addi-logo.svg"> en<strong>   hasta 6 cuotas</strong>.Pide un cupo</div>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>                            
+                        </div>
+                        
+                    </form>
+                </div>  
+            </div>
             <div class="container-screm-up-40 w-100">
-                <div class="d-flex w-100 flex-column justify-content-center align-items-center " style="border-radius: .5rem; box-sizing: border-box;border: 2px solid #e5e7eb;">
+                <div class="w-100 flex-column justify-content-center align-items-center "  id="pay-one" style="border-radius: .5rem; box-sizing: border-box;border: 2px solid #e5e7eb;">
                     <div class="w-100 d-flex justify-content-center align-items-center p-1 rounded-top-3 fs-5 text-white" style="background: var(--main-color-dark);font-weight: bolder;">
                         Pasaportes
                     </div>
@@ -211,6 +274,78 @@
                         Total: $29.900
                     </div>
                 </div>   
+                <div class="w-100 flex-column justify-content-center align-items-center "  id="pay-two" style="border-radius: .5rem; box-sizing: border-box;border: 2px solid #e5e7eb;">
+                    <div class="w-100 d-flex justify-content-center align-items-center p-1 rounded-top-3 fs-5 text-white" style="background: var(--main-color-dark);font-weight: bolder;">
+                        Mejora tu experiencia
+                    </div>
+                    <div class="w-100 d-flex justify-content-center align-items-center p-1" style="background: var(--V_pricipal);font-weight: bolder;font-size: 1rem;color: var(--main-color-dark);">
+                        Fecha de visita: 24 octubre de 2024
+                    </div>
+                    <div class="d-flex align-items-center overflow-x-hidden overflow-y-auto flex-column container_scroll w-100" style="max-height: 21rem;">                                                                                                                                                                            
+                        <div class="w-100 border-bottom d-flex justify-content-evenly align-items-center p-3 h-auto">
+                            <img class="img-fluid pe-1" width="80" height="80" src="https://tiendasalitremagico.com.co/_next/image?url=https%3A%2F%2Funyrealsoftassets.us-east-1.linodeobjects.com%2FSalitreMagico%2FProd%2FSettings%2FProducts%2FEcommerce%2F1448%2Fimg_product_ecommerce_1716498857.png&w=96&q=75" alt="">                            
+                            <span class="m-0 p-0" style="color: var(--color-gray);font-size: .7rem;text-align: justify;width: 60%;">Pasaporte Nitro</span>                                
+                            <div class="align-self-start">
+                                <i class="bi bi-exclamation-circle fs-5" style="color: var(--main-color);cursor: pointer;"></i>
+                            </div>
+                            <div class="text-center pe-3" style="font-weight: bold;width: 20%;">
+                                <div>                                  
+                                    <div style="height: .7rem;font-size: .7rem;">$29.900</div>
+                                </div>
+                                <div class="mt-1 d-flex justify-content-center" style="font-size: .7rem;">
+                                    <div>
+                                        <button style="color: var(--main-color);font-size: 1.125rem;line-height: 1.75rem;text-transform: none;border: none;background: none;">-</button>
+                                    </div>
+                                    <input type="text" class="text-center" value="0" readonly style="border: 2px solid #e5e7eb;width: 35px;margin: 0px .5rem 0px .5rem;font-size: 100%;">
+                                    <div>
+                                        <button style="color: var(--main-color);font-size: 1.125rem;line-height: 1.75rem;text-transform: none;border: none;background: none;">+</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>                                                               
+                    </div>                    
+                    <div  class="w-100 d-flex justify-content-center align-items-center p-1 text-white" style="background: var(--G_fondo);font-weight: bolder;font-size: .8rem;">
+                        Subtotal pasaportes: $59.900
+                    </div>
+                    <div class="w-100 d-flex justify-content-center align-items-center p-1 rounded-bottom-3 text-white" style="background: var(--main-color-dark);font-weight: bolder;font-size: .8rem;">
+                        Total: $29.900
+                    </div>
+                </div>       
+                <div class="w-100 flex-column justify-content-center align-items-center "  id="pay-five" style="border-radius: .5rem; box-sizing: border-box;border: 2px solid #e5e7eb;">
+                    <div class="w-100 d-flex justify-content-center align-items-center p-1 rounded-top-3 fs-5 text-white" style="background: var(--main-color-dark);font-weight: bolder;">
+                        Resumen de tu compra
+                    </div>
+                    <div class="w-100 d-flex justify-content-center align-items-center p-1" style="background: var(--V_pricipal);font-weight: bolder;font-size: 1rem;color: var(--main-color-dark);">
+                        Fecha de visita: 24 octubre de 2024
+                    </div>
+                    <div class="d-flex align-items-center overflow-x-hidden overflow-y-auto flex-column container_scroll w-100" style="max-height: 21rem;">                                                                                    
+                        <div class="w-100 border-bottom d-flex justify-content-evenly align-items-center p-3 h-auto">
+                            <img class="img-fluid pe-1" width="80" height="80" src="https://tiendasalitremagico.com.co/_next/image?url=https%3A%2F%2Funyrealsoftassets.us-east-1.linodeobjects.com%2FSalitreMagico%2FProd%2FSettings%2FProducts%2FEcommerce%2F1448%2Fimg_product_ecommerce_1716498857.png&w=96&q=75" alt="">                            
+                            <span class="m-0 p-0" style="color: var(--color-gray);font-size: .7rem;text-align: justify;width: 60%;">Pasaporte Nitro</span>                                                          
+                            <div class="text-center pe-3" style="font-weight: bold;width: 20%;">
+                                <div>                                   
+                                    <div style="height: .7rem;font-size: .7rem;">$29.900</div>
+                                </div>                              
+                            </div>
+                        </div>                                                               
+                    </div>                    
+                    <div  class="w-100 d-flex justify-content-center align-items-center p-1 text-white" style="background: var(--G_fondo);font-weight: bolder;font-size: .8rem;">
+                        Subtotal pasaportes: $59.900
+                    </div>
+                    <div  class="w-100 d-flex justify-content-center align-items-center p-1 text-white flex-column" style="background: var(--main-color);font-weight: bolder;font-size: .8rem;">
+                        <div class="d-flex w-100 gap-3 justify-content-center align-items-center flex-wrap">
+                          <label for="disabledTextInput" class="form-label m-0">Codigo descuento</label>
+                          <input type="text" id="disabledTextInput" class="form-control" style="height: 30px;max-width: 250px;">
+                        </div>
+                        <div class="text-center">
+                          Al aplicar tu cupon/convenio no podras modificar tu correo
+                        </div>
+                        <button class="btn_per_two">Aplicar descuento</button>
+                    </div>
+                    <div class="w-100 d-flex justify-content-center align-items-center p-1 rounded-bottom-3 text-white" style="background: var(--main-color-dark);font-weight: bolder;font-size: .8rem;">
+                        Total: $29.900
+                    </div>
+                </div>       
             </div>               
         </div>  
         <div class="d-flex align-items-start flex-column container-direction-row m-auto gap-4 container-screm-up-90 w-100" style="max-width: 1064px;">
@@ -235,8 +370,8 @@
             </div>
             <div class="mt-1 w-100 container-screm-up-40" style="width: 40%;">
                 <div class="d-flex justify-content-between">
-                    <button class="btn_per_one">Volver</button>
-                    <button class="btn_per_two">Continuar</button>
+                    <button class="btn_per_one" onclick="setState( state <=3  && state > 1 ? state = state - 1 : state )">Volver</button>
+                    <button class="btn_per_two" onclick="setState( state >=1 && state < 3 ? state = state + 1 : state )">Continuar</button>
                 </div>
                 <div class="w-100 d-flex justify-content-center mt-5">
                     <section class="w-100">
@@ -286,3 +421,40 @@
 </body>
 </html>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<script>
+    
+    var state = 1;
+    function setState(pas) {
+        console.log(pas)
+        switch (pas) {
+            case 1:
+                document.getElementById("pay-one").style.display = 'flex';
+                document.getElementById('pay-two').style.display ='none';
+                document.getElementById('pay-three').style.display ='none';
+                document.getElementById('pay-four').style.display ='flex';
+                document.getElementById('pay-five').style.display ='none';
+                break;
+        
+            case 2:
+                document.getElementById('pay-one').style.display = 'none';
+                document.getElementById('pay-two').style.display = 'flex';
+                document.getElementById('pay-three').style.display = 'none';
+                document.getElementById('pay-four').style.display ='flex';
+                document.getElementById('pay-five').style.display ='none';
+                break;
+        
+            case 3:
+                document.getElementById('pay-one').style.display = 'none';
+                document.getElementById('pay-two').style.display = 'none';
+                document.getElementById('pay-three').style.display = 'flex';
+                document.getElementById('pay-four').style.display ='none';
+                document.getElementById('pay-five').style.display ='flex';
+                break;
+        
+            default:
+                break;
+        }
+    }
+    setState(state);
+ 
+</script>
