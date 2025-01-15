@@ -142,6 +142,9 @@
         }
     }
     @media (max-width: 768px) {
+        .frm-column-shop{
+            flex-wrap: wrap;
+        }
         .purchases-data-phone{
             display: flex !important;
         }
@@ -157,10 +160,7 @@
     .card-membership{
         justify-content: flex-start;
     }  
-.shows_img_gallery:first-child{
-    width: 100%;
-    max-width: 1064px !important;
-}
+
 .shows_img_gallery{
     height: 400px;
     max-width: 349px;
@@ -216,3 +216,35 @@
     --bs-btn-active-bg:  var(--V_pricipal);
     --bs-btn-active-border-color:  var(--V_pricipal);
   }
+
+.btn-shop-noti{
+    background-color: var(--V_pricipal);
+    color: var(--main-color-dark);
+    font-weight: bold;
+    padding: 5px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+    font-size: 15px;
+}
+.btn-cotainer-noti{
+    bottom: -25px;
+    gap: calc(1px + 1vw);
+}
+@media (max-width: 448px) {
+    .btn-shop-noti{
+        font-size: 10px;
+    }
+    .btn-cotainer-noti{
+        bottom: -20px;
+        
+    }       
+}
+@media (max-width: 417px) {
+    .data-container-noti > div{
+        font-size: 10px;
+    }
+}
+.btn-shop-noti:hover{
+    background-color: var(--V_Clara_plus);
+}
