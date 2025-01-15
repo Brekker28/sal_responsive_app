@@ -70,45 +70,45 @@
 
 
     <div class="m-0 p-0 d-flex overflow-hidden justify-content-between flex-column align-items-center">
-      <nav class="mt-3 d-flex justify-content-center" style="height:calc(10px + 5vw) ;max-height: 130px;min-height: 30px;">
+      <nav class="mt-3 d-flex justify-content-center w-100" style="height:calc(10px + 5vw) ;max-height: 130px;min-height: 30px;">
           <div class="img_background_format w-75 h-100 rounded-4" style="background-image: url(../resources/banners/bannerv2.webp);"></div>
       </nav>
       <div class=" d-flex justify-content-center align-items-center w-100 flex-column" style="max-width: 1264px">        
-        <div class="border rounded-4 mt-3 w-100" style="padding: 40px;">
-            <form action="/sal_responsive_app/pages/shop.html" method="GET" class="profile-form" enctype="multipart/form-data">
+        <div class="rounded-4 mt-3" style="padding: 40px;border: 2px solid #e5e7eb;width: 90%;">
+            <form action="/sal_responsive_app/pages/shop.html" method="GET" class="profile-form w-100" enctype="multipart/form-data">
                 <div class="txt_main_color-dark fw-bold fs-3">                        
                     Mis datos                        
                 </div>
-                <div class="gap-4 frm-column-data"> 
-                    <input type="text" style="border: none;background: white;color: var(--G_texo);" disabled class="form-control mt-2  block col rounded py-1 px-4 fs-5 fw-bold" placeholder="Nombres" value="Albert">                        
-                    <input type="text" style="border: none;background: white;color: var(--G_texo);" disabled class="form-control mt-2 block col rounded py-1 px-4 fs-5 fw-bold" placeholder="Apellidos" value="Quintanilla">      
+                <div class="frm-column-data"> 
+                    <input type="text" style="border: none;background: white;color: var(--G_texo);" disabled class="form-control col fw-bold" placeholder="Nombres" value="Albert">                        
+                    <input type="text" style="border: none;background: white;color: var(--G_texo);" disabled class="form-control col fw-bold" placeholder="Apellidos" value="Quintanilla">      
                 </div>
-                <div class="gap-4 frm-column-data">                        
-                    <input type="text" style="border: none;background: white;color: var(--G_texo);" disabled class="form-control mt-2 block col rounded py-1 px-4 fs-5 fw-bold" placeholder="Numero de documento" value="1003684564">                        
-                    <input type="text" style="border: none;background: white;color: var(--G_texo);" disabled class="form-control mt-2 block col rounded py-1 px-4 fs-5 fw-bold" placeholder="Tipo de documento" value="C.C">      
+                <div class="frm-column-data">                        
+                    <input type="text" style="border: none;background: white;color: var(--G_texo);" disabled class="form-control col fw-bold" placeholder="Numero de documento" value="1003684564">                        
+                    <input type="text" style="border: none;background: white;color: var(--G_texo);" disabled class="form-control col fw-bold" placeholder="Tipo de documento" value="C.C">      
                 </div>
-                <div class="gap-4 frm-column-data">                        
-                    <input type="date" style="border: none;background: white;color: var(--G_texo);" disabled class="form-control mt-2  block col rounded py-1 px-4 fs-5 fw-bold" placeholder="Fecha de nacimiento" value="2003-05-28">                        
-                    <input type="text" style="border: none;background: white;color: var(--G_texo);" disabled class="form-control mt-2 r block col rounded py-1 px-4 fs-5 fw-bold" placeholder="Celular" value="3104027325">      
+                <div class="frm-column-data">                        
+                    <input type="date" style="border: none;background: white;color: var(--G_texo);" disabled class="form-control col fw-bold" placeholder="Fecha de nacimiento" value="2003-05-28">                        
+                    <input type="text" style="border: none;background: white;color: var(--G_texo);" disabled class="form-control col fw-bold" placeholder="Celular" value="3104027325">      
                 </div>
-                <div class="gap-4 frm-column-data">                        
-                    <input type="email" style="border: none;background: white;color: var(--G_texo);" disabled class="form-control mt-2  block col rounded py-1 px-4 fs-5 fw-bold" placeholder="Seleccionar departamento" value="Cundinamarca">                        
-                    <input type="text" style="border: none;background: white;color: var(--G_texo);" disabled class="form-control mt-2  block col rounded py-1 px-4 fs-5 fw-bold" placeholder="Direccion" value="NN">      
+                <div class="frm-column-data">                        
+                    <input type="email" style="border: none;background: white;color: var(--G_texo);" disabled class="form-control col fw-bold" placeholder="Seleccionar departamento" value="Cundinamarca">                        
+                    <input type="text" style="border: none;background: white;color: var(--G_texo);" disabled class="form-control col fw-bold" placeholder="Direccion" value="NN">      
                 </div>
-                <div class="gap-4 frm-column-data">                        
-                    <input type="email" style="border: none;background: white;color: var(--G_texo);" disabled class="form-control mt-2 block col rounded py-1 px-4 fs-5 fw-bold" aria-describedby="emailHelp" placeholder="E-mail" value="albert.quintanilla@unyrealsoft.com">                                                
+                <div class="frm-column-data">                        
+                    <input type="email" style="border: none;background: white;color: var(--G_texo);" disabled class="form-control fw-bold" aria-describedby="emailHelp" placeholder="E-mail" value="albert.quintanilla@unyrealsoft.com">                                                
                 </div>                                                                                     
             </form> 
-            <div class="mt-3 d-flex justify-content-end gap-3 flex-wrap">
-                <button class="btn btn-salitre2 rounded-5" style="padding: 5px 25px 5px 25px;cursor: pointer;" onclick="window.location.href = ''" > Modificar Informacion</button>
-                <button class="btn btn-salitre2 rounded-5" style="padding: 5px 25px 5px 25px;cursor: pointer;" onclick="window.location.href = '/sal_responsive_app/pages/alter_pass.html'" > Cambiar Contraseña</button>
-                <button class="btn btn-salitre rounded-5"  style="padding: 5px 25px 5px 25px;cursor: pointer;" onclick="window.location.href = ''" > Volver</button>
+            <div class="mt-3 d-flex gap-3 container-btn-userdata w-100" style="justify-content: flex-end;">
+                <button class="btn btn-salitre2 rounded-5" style="max-width: 300px; padding: 5px 25px 5px 25px;cursor: pointer;" onclick="window.location.href = ''" > Modificar Informacion</button>
+                <button class="btn btn-salitre2 rounded-5" style="max-width: 300px;padding: 5px 25px 5px 25px;cursor: pointer;" onclick="window.location.href = '/sal_responsive_app/pages/alter_pass.html'" > Cambiar Contraseña</button>
+                <button class="btn btn-salitre rounded-5"  style="max-width: 300px;padding: 5px 25px 5px 25px;cursor: pointer;" onclick="window.location.href = ''" > Volver</button>
             </div>
         </div>                                                
       </div>      
     </div> 
 
-    <div class="position-relative" style="height: 89px;">
+    <div class="position-relative" style="height: 89px;margin-top: 15px;">
         <div class="bottom_menu position-fixed w-100 bottom-0 d-flex justify-content-center align-items-center p-1 h-auto">
             <div class="d-flex justify-content-center align-items-center" style="width: 98%;">
                 <div class="w-100 h-100 d-flex align-items-center justify-content-between gap-3 overflow-hidden p-2 rounded-4" style="background: white;-webkit-box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.75);
