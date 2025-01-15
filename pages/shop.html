@@ -11,7 +11,7 @@
 <body>
   <nav class="navbar fixed-top">
     <div class="container-fluid">          
-      <button class="navbar-toggler btn m-0 p-0 fs-1 border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation" style="color: var(--main-color);">
+      <button class="navbar-toggler btn m-0 p-0 fs-1 border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation" style="color: var(--main-color);background: white;">
         <i class="bi bi-list"></i>
       </button>
       <div class="offcanvas offcanvas-start rounded-start-3 rounded-end-4" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel" style="    width: calc(100px + 50vw);min-width: 200px;max-width: 390px;">
@@ -69,14 +69,16 @@
 </nav>
 
     <div class="container-fluid">
-      <nav class="mt-3 d-flex justify-content-center " style="margin-bottom: 40px;">
-          <div style="background-color: var(--main-color);width: 75%;height: 100%;border-radius: 10px;">
+      <nav class="d-flex justify-content-center " style="margin-bottom: 40px;margin-top: 39px;">
+          <div style="background-color: var(--main-color);width: 100%;height: 100%;border-radius: 10px;">
             <div class="d-flex justify-content-center align-items-center position-relative" style="height: 100%;padding: 10px 5px;">
-                <div class="d-flex justify-content-center align-items-center">
-                    <div class="d-flex  justify-content-center align-items-center gap-3 flex-wrap h-auto data-container-noti">
-                        <img src="../resources/Icons/EMOCION.png" alt="" class="img-fluid rounded-circle w-auto"  style="height: calc(5px + 10vw);min-height: 20px;;max-height: 60px;border: 3px solid white;padding: 1px;">
-                        <div class="d-flex justify-content-center align-items-center" style="color: white;font-weight: bold;">Buenas tardes,<br>Damaris Arango</div>
-                        <img src="../resources/banners/logo.png" alt="" class="img-fluid  w-auto"  style="width: auto;height: 50px;height: calc(3px + 8vw);min-height: 10px;;max-height: 40px;">
+                <div class="d-flex justify-content-center align-items-center w-100">
+                    <div class="d-flex  justify-content-between align-items-center gap-3 flex-wrap h-auto data-container-noti w-100">                        
+                        <div class="d-flex justify-content-center align-items-center gap-2" style="color: white;font-weight: bold;margin-left: 10px;">
+                            <img src="../resources/Icons/EMOCION.png" alt="" class="img-fluid rounded-circle w-auto"  style="height: calc(5px + 10vw);min-height: 20px;;max-height: 60px;border: 3px solid white;padding: 1px;">
+                            <div>Buenas tardes,<br>Damaris Arango</div>
+                        </div>
+                        <img src="../resources/banners/logo.png" alt="" class="img-fluid  w-auto"  style="width: auto;height: 50px;height: calc(3px + 8vw);min-height: 10px;;max-height: 40px;margin-right: 10px;">
                     </div>
                 </div>
                 <div class="position-absolute d-flex justify-content-center align-items-center btn-cotainer-noti" >
@@ -90,20 +92,20 @@
             </div>
           </div>
       </nav>
-      <div class="container-fluid d-flex justify-content-center gap-1 mt-3 flex-wrap align-items-center text-center" style="font-size: 13px">
-          <div class="rounded-5 d-flex align-items-center justify-content-center" style="background-color: var(--main-color);padding: 5px 13px 5px 13px;color:white;font-weight: bold;">
+      <div class="container-fluid d-flex justify-content-center gap-1 mt-3 flex-nowrap align-items-center text-center" style="font-size: 13px">
+          <div class="rounded-3 d-flex align-items-center justify-content-center" style="background-color: var(--main-color);padding: 5px 13px 5px 13px;color:white;font-weight: bold;">
             Fecha visita
           </div>          
-          <div class="rounded-5  d-flex align-items-center justify-content-center" style="background-color: var(--V_pricipal);padding: 5px 13px 5px 13px;color: var(--main-color);font-weight: bold;">
+          <div class="rounded-3  d-flex align-items-center justify-content-center" style="background-color: var(--V_pricipal);padding: 5px 13px 5px 13px;color: var(--main-color);font-weight: bold;">
             Mejora tu experiencia
           </div>          
-          <div class="rounded-5  d-flex align-items-center justify-content-center" style="background-color: var(--V_pricipal);padding: 5px 13px 5px 13px;color: var(--main-color);font-weight: bold;">
+          <div class="rounded-3  d-flex align-items-center justify-content-center" style="background-color: var(--V_pricipal);padding: 5px 13px 5px 13px;color: var(--main-color);font-weight: bold;">
             Datos de la compra
           </div>          
       </div>
 
-      <div class="container-fluid d-flex justify-content-center mt-5 flex-column flex-wrap">
-        <div class="d-flex align-items-start  m-auto justify-content-between gap-4 container-screm-up-70 flex-column container-direction-row" style="max-width: 1064px;width: 90%;">
+      <div class="container-fluid d-flex justify-content-center mt-4 flex-column flex-wrap">
+        <div class="d-flex align-items-start  m-auto justify-content-between gap-4 container-screm-up-70 flex-column container-direction-row" style="max-width: 1064px;width: 100%;">
             <div class="flex-wrap justify-content-between flex-row container-screm-up-58" id="pay-four">
                 <div class="d-flex flex-row align-items-end gap-1 w-100 container-screm-up-70" style="border: 0 solid #e5e7eb;">
                     <div class="rounded-top-4 d-flex justify-content-center align-items-center text-center" style="background: var(--main-color);padding: 10px;color: white;font-weight: bold;width: 40%;font-size: 9px;">
@@ -142,7 +144,7 @@
             </div> 
             <div class="flex-wrap justify-content-between flex-row container-screm-up-58"  id="pay-three">
                 <div class="w-100 flex-column justify-content-center align-items-center p-3">                     
-                    <form action="" class="border rounded-5" style="height: max-content;max-width: 550px" >                
+                    <form action="" class="border rounded-5 w-100" style="height: max-content;max-width: 550px" >                
                         <div class="d-flex flex-column justify-content-center align-items-center">                
                             <h1 class="fs-4 pt-2 mt-3 txt_main_color-dark" style="width: 90%;font-weight: bold;">Confirmar tus datos</h1>
                             <div style="width: 90%;">
@@ -371,7 +373,7 @@
         </div>  
         <div class="d-flex align-items-start flex-column container-direction-row m-auto gap-4 container-screm-up-90 w-100" style="max-width: 1064px;">
             <div class="d-flex flex-row flex-wrap justify-content-between container-screm-up-58 w-100">
-                <div class="w-100 d-flex flex-row gap-3 justify-content-end pt-3 pe-2">
+                <div class="w-100 d-flex flex-row gap-3 justify-content-end pt-3 pe-2 container-state-shop">
                     <div class="d-flex justify-content-center align-items-center gap-3" style="padding-right: 3em;font-size: .75rem;line-height: 1rem;gap: 10px;color: var(--color-gray);">
                         <div style="width:1.4em;height:1.4em;background:var(--main-color)"></div>
                         Abierto
