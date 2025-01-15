@@ -151,6 +151,9 @@
     }
 
     @media (max-width: 768px) {
+        .btn-purache-detail-container{
+            flex-direction: column;
+        }
         .frm-column-data{
             flex-direction: column;
         }

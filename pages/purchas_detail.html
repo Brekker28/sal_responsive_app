@@ -74,18 +74,18 @@
           <div class="img_background_format w-75 h-100 rounded-4" style="background-image: url(../resources/banners/bannerv2.webp);"></div>
       </nav>
       <div class=" d-flex justify-content-center flex-column align-items-center w-100">
-        <div class="m-4 d-flex justify-content-start w-100" style="font-weight: bold;color: var(--main-color);max-width: 1264px">
+        <div class="mt-3 d-flex justify-content-start w-100" style="font-weight: bold;color: var(--main-color);max-width: 1264px;font-size: 20px;">
           Detalle compra
         </div>       
-        <div class="m-4 w-100 border rounded-4 p-3 d-flex flex-wrap justify-content-evenly" style="max-width: 1264px">
-          <div class="d-flex justify-content-start align-items-center flex-column gap-2">
-            <div>
-              <div class="d-flex justify-content-center align-items-center gap-2">
-                <img class="img-fluid rounded-circle p-1" src="../resources/Icons/EMOCION.png" alt="" style="border: 3px solid var(--main-color);width: 70px;height: 70px;">
-                <span class="fw-bold">Pedido #92572</span>
-              </div>
+        <div class="mt-3 w-100 border rounded-4 p-3 d-flex flex-wrap justify-content-evenly" style="max-width: 1264px">
+          <div class="d-flex justify-content-start align-items-center flex-column gap-2 w-100">
+            
+            <div class="d-flex justify-content-start w-100 align-items-center gap-2">
+              <img class="img-fluid rounded-circle p-1" src="../resources/Icons/EMOCION.png" alt="" style="border: 3px solid var(--main-color);width: 50px;height: 50px;">
+              <span class="fw-bold">Pedido #92572</span>
             </div>
-            <div class="d-flex justify-content-center align-items-start flex-column gap-2">
+            
+            <div class="d-flex justify-content-center align-items-start flex-column gap-2 w-100">
               <span><strong>Fecha de compra:</strong> 2024-07-19</span>
               <span><strong>Fecha de visita:</strong> 2024-07-19</span>
               <span><Strong>Detalle:</Strong></span>
@@ -102,9 +102,10 @@
             <img class="img-fluid" width="400px" src="https://t1.gstatic.com/licensed-image?q=tbn:ANd9GcTFRaX872E1iX4jlcXwLY01J-fRIap_Bnveev0X5UgEGtUHrSALgmbenlDAx3cryQFr" alt="" srcset=""> 
           </div>
         </div> 
-        <div class="d-flex justify-content-center align-items-center gap-2 flex-wrap mb-3" style="max-width: 1264px">                    
-          <button class="btn btn-danger" data-bs-toggle="tooltip" data-bs-custom-class="custom-tooltip" data-bs-title="Reenviar QR"><i class="bi bi-qr-code"></i> Descargar QR</button>
-          <button class="btn btn-salitre" data-bs-toggle="tooltip" data-bs-custom-class="custom-tooltip" data-bs-title="Descargar factura"><i class="bi bi-file-earmark-arrow-down"></i> Descarga tu factura aquí</button>        
+        <div class="d-flex justify-content-center align-items-center gap-2 mb-3 btn-purache-detail-container mt-3" style="max-width: 1264px">                    
+          <button class="btn btn_per_two gap-1" data-bs-toggle="tooltip" data-bs-custom-class="custom-tooltip" data-bs-title="Reenviar QR"><i style="font-size: 20px;" class="bi bi-qr-code"></i> Descargar QR</button>
+          <button class="btn btn_per_one gap-1" data-bs-toggle="tooltip" data-bs-custom-class="custom-tooltip" data-bs-title="Descargar factura"><i style="font-size: 20px;" class="bi bi-file-earmark-arrow-down"></i> Descarga tu factura aquí</button>  
+          <button class="btn btn_per_two gap-1" onclick="window.location.href ='/sal_responsive_app/pages/purchases.html'"></i> Volver</button>           
         </div>      
       </div> 
 
