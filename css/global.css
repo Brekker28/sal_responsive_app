@@ -141,7 +141,18 @@
             display: flex !important;            
         }
     }
+
+    .frm-column-data{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
     @media (max-width: 768px) {
+        .frm-column-data{
+            flex-direction: column;
+        }
         .frm-column-shop{
             flex-wrap: wrap;
         }
