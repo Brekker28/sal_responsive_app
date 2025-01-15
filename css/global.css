@@ -283,6 +283,22 @@
         gap: 5px !important;
     }    
 }
+@media (max-width: 1002px) {
+   
+    .container-membership-data{
+        flex-direction: column;
+    }
+   
+}
+@media (max-width: 433px) {
+   
+    .data-member-two{
+        font-size: 10px;
+        align-items: center !important;
+    }
+    
+   
+}
 .btn-shop-noti:hover{
     background-color: var(--V_Clara_plus);
 }
