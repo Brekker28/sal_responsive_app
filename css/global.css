@@ -236,6 +236,19 @@
     --bs-btn-active-bg:  var(--V_pricipal);
     --bs-btn-active-border-color:  var(--V_pricipal);
   }
+  .btn-salitre3 {
+    --bs-btn-font-weight: 600;
+    --bs-btn-color:  white;
+    --bs-btn-bg: black;
+    --bs-btn-border-color: black;
+    --bs-btn-hover-color:  white;
+    --bs-btn-hover-bg: black;
+    --bs-btn-hover-border-color:  black;
+    --bs-btn-focus-shadow-rgb:black;
+    --bs-btn-active-color:  white;
+    --bs-btn-active-bg:  black;
+    --bs-btn-active-border-color:  black;
+  }
 
 .btn-shop-noti{
     background-color: var(--V_pricipal);
