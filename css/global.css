@@ -264,6 +264,11 @@
     bottom: -25px;
     gap: calc(1px + 8vw);
 }
+@media (max-width: 375px) {
+    .progres-bar-item{
+        font-size: 10px;
+    }         
+}
 @media (max-width: 448px) {
     .btn-shop-noti{
         font-size: 12px;
